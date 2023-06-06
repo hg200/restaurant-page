@@ -1,1 +1,3 @@
-const header = document.createElement("div");
+import { initialPageLoad } from "./page-load";
+
+initialPageLoad();
