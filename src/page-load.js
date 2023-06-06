@@ -1,6 +1,9 @@
-import { CreateHomePage } from "./home";
+//import { CreateHomePage } from "./home";
 
-export function initialPageLoad() {
-    const body = document.querySelector("body");
-    body.addEventListener("load", CreateHomePage);
+function initialPageLoad() {
+    // const body = document.querySelector("body");
+    //body.addEventListener("load", CreateHomePage);
+    return "it works";
 }
+
+export default initialPageLoad;

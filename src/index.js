@@ -1,3 +1,4 @@
-import { initialPageLoad } from "./page-load";
+import initialPageLoad from "./page-load"
+//initialPageLoad();
 
-initialPageLoad();
+console.log(initialPageLoad());
