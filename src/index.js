@@ -1,4 +1,4 @@
-import initialPageLoad from "./page-load"
-//initialPageLoad();
+import generateHomePage from "./page-load"
 
-console.log(initialPageLoad());
+
+generateHomePage();
