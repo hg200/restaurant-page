@@ -1,18 +1,19 @@
-import "./styles/style.css";
+import "./styles/style.css"
+import menuIcon from "./assets/menu-icon.png"
+import homeIcon from "./assets/burger-icon-home.png"
 
-function generateHomePage() {
+function generateInitialPage() {
     const body = document.querySelector("body");
     const content = document.getElementById("content");
 
-    //body.addEventListener("load", CreateHomePage);
     const navbar = document.createElement("div");
     navbar.classList.add("navbar");
-    navbar.innerHTML = `<div class="menuBtn btn">Menu</div>
-    <div class="homebtn btn">Home</div>
+    navbar.innerHTML = `<div class="menuBtn btn"><img src="${menuIcon}">Menu</div>
+    <div class="homebtn btn"><img src="${homeIcon}"></div>
     <div class="contactBtn btn">Contact</div>`;
     content.appendChild(navbar);
 
     return;
 }
 
-export default generateHomePage;
+export default generateInitialPage;
