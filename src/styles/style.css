@@ -49,16 +49,25 @@ body {
     width: 25px;
 }
 
-
-/*Home Page*/
-
-.containerHome {
+.container {
     margin-top: 40px;
     background-color: rgb(216, 78, 3);
     width: 70%;
     height: 100vh;
     border-top-left-radius: 16em;
     border-top-right-radius: 16em;
+}
+
+
+/*Home Page*/
+
+.containerHome {
+    /*margin-top: 40px;
+    background-color: rgb(216, 78, 3);
+    width: 70%;
+    height: 100vh;
+    border-top-left-radius: 16em;
+    border-top-right-radius: 16em;*/
 }
 
 .containerHome img {
@@ -70,18 +79,18 @@ body {
 /*Menu Page*/
 
 .containerMenu {
-    margin-top: 25px;
+    /* margin-top: 25px;
     background-color: aliceblue;
     width: 80%;
-    height: 80%;
+    height: 80%;*/
 }
 
 
 /*Contact page*/
 
 .containerContact {
-    margin-top: 25px;
+    /*margin-top: 25px;
     background-color: green;
     width: 80%;
-    height: 80%;
+    height: 80%;*/
 }
