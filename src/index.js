@@ -12,5 +12,5 @@ const btnArr = Array.from(document.querySelectorAll(".btn"));
 const moduleGeneratorsArray = [generateMenuPage, generateHomePage, generateContactPage];
 
 for (let i = 0; i < btnArr.length; i++) {
-    btnArr[i].addEventListener("click", moduleGeneratorsArray[i], { once: true })
+    btnArr[i].addEventListener("click", moduleGeneratorsArray[i])
 }
