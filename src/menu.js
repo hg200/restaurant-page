@@ -3,10 +3,12 @@ import "./styles/style.css"
 function generateMenuPage() {
     const content = document.querySelector("#content");
 
-    const containerMenu = document.createElement("div");
-    containerMenu.classList.add("containerMenu");
-
-    content.appendChild(containerMenu);
+    //const container = document.createElement("div");
+    const container = document.querySelector(".container");
+    container.innerHTML = "";
+    container.classList.add("containerMenu");
+    container.classList.add("container");
+    content.appendChild(container);
 
 };
 
