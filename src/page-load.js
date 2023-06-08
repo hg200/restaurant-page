@@ -13,6 +13,11 @@ function generateInitialPage() {
     <div class="contactBtn btn">Contact</div>`;
     content.appendChild(navbar);
 
+    const container = document.createElement("div");
+    container.classList.add("container");
+
+    content.appendChild(container);
+
     return;
 }
 
