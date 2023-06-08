@@ -5,11 +5,15 @@ import burger from "./assets/burger-transparent.png"
 function generateHomePage() {
     const content = document.querySelector("#content");
 
-    const containerHome = document.createElement("div");
-    containerHome.classList.add("containerHome");
-    containerHome.innerHTML = `<img src="${burger}">`;
+    //const container = document.createElement("div");
+    const container = document.querySelector(".container");
+    container.innerHTML = "";
 
-    content.appendChild(containerHome);
+    container.classList.add("containerHome");
+    container.classList.add("container");
+    container.innerHTML = `<img src="${burger}">`;
+
+    content.appendChild(container);
 
 };
 

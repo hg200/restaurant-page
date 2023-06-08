@@ -3,10 +3,14 @@ import "./styles/style.css"
 function generateContactPage() {
     const content = document.querySelector("#content");
 
-    const containerContact = document.createElement("div");
-    containerContact.classList.add("containerContact");
+    // const container = document.createElement("div");
+    const container = document.querySelector(".container");
+    container.innerHTML = "";
 
-    content.appendChild(containerContact);
+    container.classList.add("containerContact");
+    container.classList.add("container");
+
+    content.appendChild(container);
 
 };
 
