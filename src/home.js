@@ -1,5 +1,5 @@
 import "./styles/style.css"
-import burger from "./assets/burger-transparent.png"
+import burger from "./assets/chef.jpg"
 
 
 function generateHomePage() {
@@ -9,9 +9,11 @@ function generateHomePage() {
     const container = document.querySelector(".container");
     container.innerHTML = "";
 
+    container.className = "";
+
     container.classList.add("containerHome");
     container.classList.add("container");
-    container.innerHTML = `<img src="${burger}">`;
+    container.innerHTML = `<span>Test the real Burger</span><img src="${burger}">`;
 
     content.appendChild(container);
 
