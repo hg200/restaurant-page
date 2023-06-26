@@ -4,14 +4,17 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    height: 100vh;
+}
 
 #content {
     background-image: url(../assets/icecream-burst.jpg);
-    background-size: 110%;
+    background-size: 120%;
+    background-repeat: no-repeat;
     padding-top: 0;
     width: 100vw;
-    /* height: 100vh;*/
+    height: 100vh;
     overflow: scroll;
     background-color: grey;
     display: flex;
@@ -51,131 +54,121 @@ body {}
     background-color: rgb(216, 78, 3);
     width: 80%;
     /*height: 80vh;*/
-    border-radius: 1em;
-    overflow: scroll;
-    opacity: 0.7;
+    border-radius: ;
 }
 
-
-/*Home Page*/
-
-.containerHome {
-    display: flex;
-    padding: 25px;
-    font-size: 54px;
-    gap: 15px;
-}
-
-.containerHome>span {
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 700;
-}
-
-.containerHome>img {
-    height: 80%;
-    width: 80%;
-    border-radius: 10em;
-}
-
-
-/*Menu Page*/
-
-.containerMenu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.containerMenu>.burger {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    border-radius: 1em;
-}
-
-.containerMenu img {
-    height: 250px;
-    width: 250px;
-}
-
-.containerMenu>span {
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    padding-top: 15px;
-    background-color: black;
-    width: 250px;
-    color: rgb(216, 78, 3);
-}
-
-.containerMenu>.burgerName {
-    color: wheat;
-}
-
-
-/*Contact page*/
-
-.containerContact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-}
-
-.containerContact>img {
-    width: 100%;
-    height: 50%;
-    border-radius: 1em;
-}
-
-.containerContact>span {
-    margin-top: 45px;
-    display: flex;
-    /*flex-direction: column;*/
-    font-size: 22px;
-    width: 120%;
-    align-items: center;
-    background-color: orangered;
-    color: black;
-}
-
-.containerContact>span>img {
-    height: 30px;
-    width: 30px;
+@media only screen and (min-width: 769px) and (max-width: 1006px) {
+    /*Home Page*/
+    .containerHome {
+        display: flex;
+        padding: 25px;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .containerHome>div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        gap: 25px;
+        padding: 0 15px 0 15px;
+    }
+    .containerHome>div>span {
+        font-size: 42px;
+        font-weight: 700;
+        text-align: left;
+        align-self: center;
+        color: white;
+    }
+    .containerHome>div>p {
+        opacity: 0.5;
+        color: white;
+    }
+    .containerHome>img {
+        height: 450px;
+        width: 450px;
+        border-radius: 1em;
+    }
+    /*Menu Page*/
+    .containerMenu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 25px;
+        margin: 45px 0 45px 0;
+    }
+    .containerMenu>.burger {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding: 15px;
+        border-radius: 1em;
+    }
+    .containerMenu img {
+        height: 250px;
+        width: 250px;
+        border-radius: 1em;
+    }
+    .containerMenu span {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        background-color: transparent;
+    }
+    .containerMenu span div {
+        color: white;
+        font-size: 26px;
+    }
+    /*Contact page*/
+    .containerContact {
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerContact img {
+        width: 600px;
+        height: 400px;
+        border-radius: 1em;
+    }
+    .containerContact span {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 22px;
+        width: 600px;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+    }
+    .containerContact>span>img {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 
 /* mobile responsive */
 
 @media only screen and (max-width: 768px) {
-    .navbar {
-        height: 90px;
-    }
-    .btn {
-        font-size: 24px;
-    }
-    .btn>img {
-        height: 45px;
-        width: 45px;
-    }
     /*home*/
     .containerHome {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 25px;
         font-size: 54px;
         gap: 15px;
     }
-    .container>span {
-        width: 20%;
-        display: flex;
-        flex-wrap: wrap;
-        font-weight: 700;
+    .containerHome span {
+        width: 30%;
+        font-size: 52px;
+        font-weight: 900;
+        text-align: center;
     }
     .containerHome>img {
         height: 80%;
@@ -189,24 +182,24 @@ body {}
     }
     /*menu*/
     .containerMenu {
+        padding: 25px 0 25px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /*grid-template-columns: repeat(2, 1fr);*/
         gap: 25px;
     }
     .containerMenu>.burger {
-        width: 80%;
+        width: 90%;
         background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 15px;
         border-radius: 1em;
     }
     .containerMenu img {
-        height: 250px;
-        width: 250px;
+        height: 350px;
+        width: 80%;
+        border-radius: 1em;
     }
     .containerMenu span {
         font-size: 28px;
@@ -214,6 +207,7 @@ body {}
         flex-direction: column;
         gap: 15px;
         align-items: center;
+        text-align: center;
         padding-top: 15px;
         background-color: black;
         width: 250px;
@@ -221,8 +215,38 @@ body {}
     }
     .containerMenu .burgerName {
         color: wheat;
+        font-size: 42px;
     }
     /*contact*/
+    .containerContact {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+    }
+    .containerContact img {
+        width: 100%;
+        height: 450px;
+        border-radius: 1em;
+    }
+    .containerContact>span {
+        margin-top: 45px;
+        padding: 5px 0 5px 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+        width: 100%;
+        border-radius: 1em;
+        align-items: center;
+        background-color: orangered;
+        color: black;
+        gap: 5px;
+    }
+    .containerContact>span>img {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 @media only screen and (max-width: 768px) {}
