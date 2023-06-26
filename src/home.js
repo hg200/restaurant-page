@@ -13,7 +13,7 @@ function generateHomePage() {
 
     container.classList.add("containerHome");
     container.classList.add("container");
-    container.innerHTML = `<span>Test the real Burger</span><img src="${burger}">`;
+    container.innerHTML = `<div><span>Test the real Burger</span><p>Savor the ultimate burger experience at Burger Bistro, where quality ingredients, customizable options, and friendly service come together to create mouthwatering perfection.</p></div><img src="${burger}">`;
 
     content.appendChild(container);
 
